@@ -76,8 +76,9 @@ nav {
 }
 main{
     background-color: white;
-    margin: 0 80px;
+    margin: 0 auto;
     padding: 20px 0;
+    width: 80%;
     text-indent: 20px;
 }
 article > h1{
