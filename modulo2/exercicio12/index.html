@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+        header{
+            background-color: beige;
+            color: black;
+            padding: 10px;
+            margin: 03px;
+        }
+        main{
+            background-color: beige;
+            color: black;
+            padding: 10px;
+            margin: 3px;
+            border-radius: 20px;
+        }
+        nav{
+            background-color: rgb(237, 233, 117);
+            color: black;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        article > aside {
+            background-color: burlywood;
+            box-shadow: 1px 1px 1px black;
+        }
+        footer{
+            background-color: beige;
+            color: black;
+            padding: 1px;
+            margin: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae sequi velit recusandae dolorum doloremque, laboriosam reprehenderit magnam voluptas in impedit, labore, delectus porro eum nisi. Perferendis natus quae nostrum?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Cursoemvideo</p>
+    </footer>
+</body>
+</html>

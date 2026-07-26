@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title> 
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagens-dinamica.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagens.png" type="image/png">
+        <img src="imagens/img.png" alt="Imagem flexivel">
+    </picture><!--picture serve para adptar a imagem para o tamanho de tela-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+   <!--controls para vc pode iniciar a musica a autoplay para musica iniciar nao funciona direto no vscode abre o navegador, pode nao funciona com todos os navegadores-->
+    <!--para isso adicionamos outras função-->
+    <audio preload="metadata" autoplay loop><!--serve para o audio funciona, e preload serve para dizer quanto carrega o audio. loop serve para repetir ação-->
+        <source src="./midia/Gone Away - Blue Beat Review.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Gone Away - Blue Beat Review.mp3">clique aqui para baixar o mp3</a></p>
+    </audio>
+</body>
+</html>

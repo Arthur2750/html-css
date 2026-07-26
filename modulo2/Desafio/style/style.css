@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+@media (max-width: 768px){
+    .conteiner{
+        flex-direction: column;
+    }
+}
+@font-face {
+    font-family: 'android';
+    src: url('/idroid/IDroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+}
+:root{
+   --cor1: #84E1AD;
+   --cor2: #37C274;
+   --cor3: #268952;
+   --cor4: #319d63;
+   --cor5: #e8f1ec;
+   --cor6: #1D5E3B;
+   --cor7: #b8ebcf7b;
+   --cor8: #268952;
+   --cor9: #C5EBD6;
+}
+body{
+    font-family: android, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--cor1);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: justify;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    width: 100%;
+    color: #e8f1ec;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px;
+    width: 100%;
+}
+header > p {
+    color: #e8f1ec;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px;
+    width: 100%;
+}
+nav { 
+    background-color:   var(--cor3);
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+} 
+.menu {
+    color: #e8f1ec;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.menu:hover{
+    background-color: var(--cor4);
+}
+main{
+    background-color: white;
+    margin: 0 80px;
+    padding: 20px 0;
+    text-indent: 20px;
+}
+article > h1{
+    color: var(--cor6);
+}
+.substitulo{
+    background-color: var(--cor7);
+    margin: 10px;
+    color: var(--cor6);
+    text-align: 5px;
+}
+.destaque {
+    color: var(--cor6);
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    height: auto;
+    
+}
+iframe{
+    max-width: 100%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+section{
+    background-color: var(--cor6);
+    height: auto;
+    height: 500px;
+    position: relative;
+}
+h3{
+    background-color:  var(--cor3);
+    color: white;
+    margin: 10px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 5px;
+}
+.lista{
+    background-color:var(--cor9);
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 2px;
+}
+.lista > ol {
+    column-count: 2;
+    list-style: none;
+}
+ol > li > abbr {
+    text-decoration: none;
+}
+footer {
+    background-color: #1A5C38;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
