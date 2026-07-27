@@ -35,9 +35,7 @@ body{
     color: black;
     margin: 0;
     padding: 0;
-    height: 100%;
-    display: flex;
-    min-height: 100%;
+    
 }
 @media(max-width: 768px){
     main{
@@ -46,6 +44,9 @@ body{
         padding: 20px 0px;
         background-color: white;
         text-indent: 20px;
+        height: 100%;
+        display: flex;
+        min-height: 100%;
     }
 }
 main{
